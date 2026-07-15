@@ -1,0 +1,20 @@
+MODELO DE DATOS - PETICIÓN EN 3 CLICS
+
+Entidad: Causa
+--------------------------------------------
+- id (INTEGER, Clave Primaria, Autoincremental): Identificador único de la causa.
+- titulo (VARCHAR): Nombre corto y claro de la problemática o solicitud.
+- descripcion (TEXT): Explicación detallada de la causa comunitaria.
+- fecha_creacion (TIMESTAMP): Fecha y hora en la que se registró la causa.
+
+Explicación: Esta entidad sirve para almacenar la información estructural de las solicitudes ciudadanas. Permite saber qué se está pidiendo, quién lo describe y cuándo se inició el proceso.
+
+
+Entidad: Apoyo
+--------------------------------------------
+- id (INTEGER, Clave Primaria, Autoincremental): Identificador único del registro de apoyo.
+- causa_id (INTEGER, Clave Foránea): Relación directa con la Causa que se está apoyando.
+- nombre_ciudadano (VARCHAR): Nombre de la persona que apoya (opcional o minimizado).
+- fecha_apoyo (TIMESTAMP): Fecha y hora exacta en la que se registró el apoyo.
+
+Explicación: Esta entidad sirve para registrar cuantitativamente el respaldo de la comunidad. Al usar una Clave Foránea (causa_id), asociamos de forma relacional cada firma con su respectiva causa sin duplicar información.

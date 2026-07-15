@@ -1,0 +1,7 @@
+Flujo del Sistema "Petición en 3 Clics":
+
+Paso 1: Un líder comunitario o ciudadano ingresa a la plataforma y crea una "Causa" (ingresa título, descripción y la solicitud formal).
+Paso 2: La causa se almacena de forma segura en la base de datos del backend (Node.js/Express).
+Paso 3: Se genera un enlace público de la causa para que otros miembros de la comunidad ingresen y sumen su apoyo con un solo clic.
+Paso 4: El sistema registra cada apoyo de forma anonimizada o minimizada en la base de datos y actualiza el contador de apoyos en tiempo real.
+Paso 5: Al alcanzar una meta de apoyos o cerrarse el plazo, el sistema compila la información y genera un documento PDF formal listo para ser radicado como Derecho de Petición ante las autoridades.

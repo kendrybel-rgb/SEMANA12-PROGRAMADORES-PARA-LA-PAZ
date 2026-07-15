@@ -1,0 +1,11 @@
+DISEÑO DE AUTOMATIZACIÓN (n8n / Telegram)
+
+1. Evento Disparador (Trigger):
+   - Una nueva causa comunitaria alcanza la meta mínima de apoyos (ej. 50 apoyos registrados) en la base de datos.
+
+2. Acción del Webhook (Mensaje enviado):
+   - Se dispara una notificación automática a través de un Bot de Telegram al grupo de la junta comunitaria.
+   - Contenido del Mensaje: "¡Meta alcanzada! La causa '[Título de la Causa]' ha recolectado todos los apoyos necesarios. El sistema ha generado el PDF formal de petición listo para su descarga y radicación."
+
+3. Filtro de Seguridad (Datos Protegidos):
+   - Información que NO debe enviarse por canales públicos/Telegram: Nombres completos de los firmantes, documentos de identidad (cédulas), correos electrónicos, números telefónicos o cualquier comentario sensible que ponga en riesgo la privacidad de los ciudadanos que apoyaron.
